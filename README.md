@@ -5,7 +5,6 @@ HTML, CSS et JavaScript, sans framework ni dépendance.
 
 ## Mise en ligne
 
-Le dépôt est publié tel quel par GitHub Pages :
 `Settings` → `Pages` → *Source* : `Deploy from a branch` → branche `main`, dossier `/ (root)`.
 
 ## Contenu
@@ -14,8 +13,9 @@ Le dépôt est publié tel quel par GitHub Pages :
 - `assets/css/style.css` — feuille de style unique, jetons en variables CSS
 - `assets/js/app.js` — comportements, sans dépendance
 - `assets/img/photos/` — photographies de l'association
+- `favicon.ico`, `apple-touch-icon.png`, `site.webmanifest` — icônes, à garder à la racine
 
 ## Avertissement
 
-Tout ce qui apparaît `[entre crochets]` est un emplacement à compléter : aucune donnée
-réelle n'a été inventée. Les formulaires et le paiement ne sont pas fonctionnels.
+Tout ce qui apparaît `[entre crochets]` est un emplacement à compléter.
+Les formulaires et le paiement ne sont pas fonctionnels.
