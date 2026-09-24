@@ -108,19 +108,6 @@ p{margin:0 0 1em}
 .btn-sm{min-height:38px;padding:0 16px;font-size:13px}
 .btn-ghost{background:transparent;color:var(--ink);border-color:var(--rule)}
 .btn-ghost:hover{border-color:var(--ink)}
-/* bouton don — pastille ronde verte, pictogramme « main tenant un cœur »,
-   repris tel quel de fellowship.ao-alliance.org */
-:root{ --don:var(--green); --don-600:#7FA00F; }
-.btn-don{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;
-  width:48px;height:48px;border-radius:50%;background:var(--don);color:#fff;border:0;cursor:pointer;
-  transition:background var(--t-fast) var(--ease),transform var(--t-fast) var(--ease)}
-.btn-don:hover{background:var(--don-600);color:#fff}
-.btn-don:active{transform:translateY(1px)}
-.btn-don:focus-visible{outline:2px solid var(--don);outline-offset:3px}
-.btn-don .ic-don{width:34%;height:auto;display:block}
-.btn-don.lg{width:64px;height:64px}
-.btn-ghost[data-amount]{min-width:104px}
-.btn-ghost[data-amount].on{border-color:var(--blue);background:#EAF3FF;color:var(--blue-600)}
 .lnk{display:inline-flex;align-items:center;gap:8px;font:600 13.5px/1 var(--font-sans);color:var(--ink);
   border-bottom:1px solid currentColor;padding-bottom:5px}
 .lnk:hover{color:var(--red)}
@@ -420,3 +407,17 @@ select:focus,input:focus,textarea:focus{border-color:var(--blue);outline:none;bo
   .hdr,.topbar,.strip,.drawer,.ftr,.btn{display:none!important}
   body{background:#fff;color:#000;font-size:11pt}
 }
+
+/* ============ bandeau de titre de page — pleine largeur, 340 px ============ */
+.phead{background:var(--blue);min-height:340px;display:flex;align-items:center;
+  justify-content:center;text-align:center;padding-block:var(--s6)}
+.phead > .wrap{display:flex;flex-direction:column;align-items:center;gap:var(--s4)}
+.phead h1{color:#fff;margin:0;max-width:28ch;text-wrap:balance}
+.ph-eyebrow{display:inline-block;background:#fff;color:var(--blue-600);
+  font:700 12px/1 var(--font-sans);letter-spacing:.12em;text-transform:uppercase;
+  padding:7px 15px;border-radius:999px}
+.phead-under{padding-block:var(--s6) var(--s5)}
+.phead-under > .wrap{display:flex;flex-direction:column;align-items:center;
+  gap:var(--s4);text-align:center}
+.phead-under .lead{max-width:62ch;margin:0}
+.phead-under nav{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}

@@ -219,20 +219,6 @@
   /* ---------- année courante ---------- */
   $$('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
 
-  /* ---- montants de don ---- */
-  var amtBtns = $$('[data-amount]');
-  if (amtBtns.length) {
-    var amtField = $('#d-mnt');
-    amtBtns.forEach(function (b) {
-      b.addEventListener('click', function () {
-        amtBtns.forEach(function (o) { o.classList.toggle('on', o === b); });
-        if (amtField) { amtField.value = ''; amtField.placeholder = b.textContent.trim() + ' FCFA'; }
-      });
-    });
-    if (amtField) amtField.addEventListener('input', function () {
-      amtBtns.forEach(function (o) { o.classList.remove('on'); });
-    });
-  }
 
 
   /* ---- diaporama d'accueil ---- */
