@@ -10,12 +10,9 @@ HTML, CSS et JavaScript, sans framework ni dépendance.
 ## Contenu
 
 - 14 pages navigables — `index.html` est la page d'accueil
-- `assets/css/style.css` — feuille de style unique, jetons en variables CSS
-- `assets/js/app.js` — comportements, sans dépendance
-- `assets/img/photos/` — photographies de l'association
-- `favicon.ico`, `apple-touch-icon.png`, `site.webmanifest` — icônes, à garder à la racine
+- `assets/css/style.css` · `assets/js/app.js` · `assets/img/photos/`
+- `favicon.ico`, `apple-touch-icon.png`, `site.webmanifest` — à garder à la racine
 
 ## Avertissement
 
 Tout ce qui apparaît `[entre crochets]` est un emplacement à compléter.
-Les formulaires et le paiement ne sont pas fonctionnels.
